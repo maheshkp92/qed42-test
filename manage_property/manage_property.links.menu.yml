@@ -1,0 +1,11 @@
+# Define the menu links for this module
+entity.content_entity_manage_property.collection:
+  title: 'Property Entity: Property Listing'
+  route_name: entity.content_entity_manage_property.collection
+  description: 'List Property'
+  weight: 10
+content_entity_manage_property.admin.structure.settings:
+  title: 'Property Settings'
+  description: 'Configure Property entity'
+  route_name:  manage_property.property_settings
+  parent: system.admin_structure

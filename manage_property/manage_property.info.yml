@@ -1,0 +1,5 @@
+type: module
+name: Manage Property
+description: 'Provide Property Details'
+package: Custom
+core: '8.x'

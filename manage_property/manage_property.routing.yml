@@ -1,0 +1,54 @@
+entity.content_entity_manage_property.canonical:
+  path: '/content_entity_manage_property/{content_entity_manage_property}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the contact entity
+    _entity_view: 'content_entity_manage_property'
+    _title: 'Property Content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'content_entity_manage_property.view'
+
+entity.content_entity_manage_property.collection:
+  path: '/content_entity_manage_property/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 'content_entity_manage_property'
+    _title: 'Property List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'view property entity'
+
+entity.manage_property.add_form:
+  path: '/content_entity_manage_property/add'
+  defaults:
+  # Calls the form.add controller, defined in the contact entity.
+    _entity_form: content_entity_manage_property.add
+    _title: 'Add Property'
+  requirements:
+    _entity_create_access: 'content_entity_manage_property'
+
+entity.content_entity_manage_property.edit_form:
+  path: '/content_entity_manage_property/{content_entity_manage_property}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the contact entity.
+    _entity_form: content_entity_manage_property.edit
+    _title: 'Edit Property'
+  requirements:
+    _entity_access: 'content_entity_manage_property.edit'
+
+entity.content_entity_manage_property.delete_form:
+  path: '/property/{content_entity_manage_property}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the contact entity.
+    _entity_form: content_entity_manage_property.delete
+    _title: 'Delete Property'
+  requirements:
+    _entity_access: 'content_entity_manage_property.delete'
+
+manage_property.property_settings:
+  path: 'admin/structure/content_entity_manage_property_settings'
+  defaults:
+    _form: '\Drupal\manage_property\Form\PropertySettingsForm'
+    _title: 'Property Settings'
+  requirements:
+    _permission: 'administer contact entity'

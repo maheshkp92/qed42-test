@@ -1,0 +1,11 @@
+# All action links for this module
+
+manage_property.property_add:
+  # Which route will be called by the link
+  route_name: entity.manage_property.add_form
+  title: 'Add Property'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.content_entity_manage_property.collection
+    - entity.content_entity_manage_property.canonical

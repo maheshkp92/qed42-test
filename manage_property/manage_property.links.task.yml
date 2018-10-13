@@ -1,0 +1,22 @@
+# Define the 'local' links for the module
+
+property.settings_tab:
+  route_name: manage_property.property_settings
+  title: Settings
+  base_route: manage_property.property_settings
+
+property.view:
+  route_name: entity.content_entity_manage_property.canonical
+  base_route: entity.content_entity_manage_property.canonical
+  title: View
+
+contact.page_edit:
+  route_name: entity.content_entity_manage_property.edit_form
+  base_route: entity.content_entity_manage_property.canonical
+  title: Edit
+
+contact.delete_confirm:
+  route_name:  entity.content_entity_manage_property.delete_form
+  base_route:  entity.content_entity_manage_property.canonical
+  title: Delete
+  weight: 10
