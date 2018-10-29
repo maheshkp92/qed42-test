@@ -1,0 +1,7 @@
+type: module
+name: Migrate Property
+description: 'Upload Property Details'
+package: Custom
+core: '8.x'
+dependencies:
+  - manage_property

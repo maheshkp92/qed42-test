@@ -1,0 +1,9 @@
+migrate_property.admin_settings_form:
+  path: '/admin/config/migrate_property/adminsettings'
+  defaults:
+    _form: '\Drupal\migrate_property\Form\MigratePropertyForm'
+    _title: 'Property Upload form'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
